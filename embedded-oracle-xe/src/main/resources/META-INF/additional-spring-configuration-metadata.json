@@ -1,0 +1,60 @@
+{
+  "groups": [
+  ],
+  "properties": [
+    {
+      "name": "embedded.oracle-xe.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": "true"
+    },
+    {
+      "name": "embedded.oracle-xe.docker-image",
+      "type": "java.lang.String",
+      "defaultValue": "postgres:10-alpine"
+    }
+  ],
+  "hints": [
+    {
+      "name": "embedded.oracle-xe.enabled",
+      "values": [
+        {
+          "value": "true",
+          "description": "Enables configuration of oracle-xe server on startup."
+        },
+        {
+          "value": "false",
+          "description": "Disables configuration of oracle-xe server on startup."
+        }
+      ]
+    },
+    {
+      "name": "embedded.oracle-xe.docker-image",
+      "values": [
+        {
+          "value": "postgres:10-alpine",
+          "description": "Latest 10.x alpine version. Ref https://hub.docker.com/_/postgres for further info."
+        },
+        {
+          "value": "postgres:11-alpine",
+          "description": "Latest 11.x alpine version. Ref https://hub.docker.com/_/postgres for further info."
+        },
+        {
+          "value": "postgres:12-alpine",
+          "description": "Latest 12.x alpine version. Ref https://hub.docker.com/_/postgres for further info."
+        },
+        {
+          "value": "timescale/timescaledb:latest-pg9.6",
+          "description": "Latest 9.6 alpine timescaledb version. Ref https://hub.docker.com/r/timescale/timescaledb for further info."
+        },
+        {
+          "value": "timescale/timescaledb:latest-pg10",
+          "description": "Latest 10.x alpine timescaledb version. Ref https://hub.docker.com/r/timescale/timescaledb for further info."
+        },
+        {
+          "value": "timescale/timescaledb:latest-pg11",
+          "description": "Latest 11.x alpine timescaledb version. Ref https://hub.docker.com/r/timescale/timescaledb for further info."
+        }
+      ]
+    }
+  ]
+}
